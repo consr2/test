@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #d3eefe;
+}
+
+.pizza {
+    height: 150vh;
+}
+
+.pizza h2 {
+    font-size: 70px;
+    color: #43515c;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pizza .이미지전체 {
+    position: relative;
+}
+
+.pizza .이미지전체>img {
+    position: absolute;
+    /*크기를 없엔다*/
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pizza .이미지전체 .재료 {
+    position: relative;
+    width: 400px;
+    height: 730px;
+    top: 430px;
+    left: 50%;
+    transform: translateX(calc(-50% - 200px));
+    /*calc()계산식 만들 수 있다*/
+    opacity: 0.1;
+    transition: 0.6s;
+    overflow: hidden;
+}
+
+.pizza .이미지전체 .재료:hover {
+    opacity: 1;
+}
+
+.pizza .이미지전체 .재료 img {
+    position: absolute;
+    left: -200px;
+    top: 250px;
+    transition: 0.6s;
+}
+
+
+
+.pizza .이미지전체 .재료:hover img.양파 {
+    left: 150px;
+    top: 150px;
+}
+
+/*이미지를 사용할떄 .없음, 이미지 호출시 띄워쓰기x*/
+
+.pizza .이미지전체 .재료:hover img.허브 {
+    left: 10px;
+    top: 170px;
+}
+
+.pizza .이미지전체 .재료:hover img.후추 {
+    left: 270px;
+    top: 230px;
+}
+
+.pizza .이미지전체 .재료:hover img.마늘 {
+    left: 110px;
+    top: 280px;
+}
+
+.pizza .이미지전체 .재료:hover img.고추 {
+    left: 230px;
+    top: 280px;
+}
+
+.pizza .이미지전체 .재료:hover img.피망 {
+    left: 50px;
+    top: 410px;
+}
+
+.pizza .이미지전체 .재료:hover img.치즈 {
+    left: 210px;
+    top: 410px;
+}
+
+.pizza .이미지전체 .재료:hover img.밀가루 {
+    left: 226px;
+    top: 0px;
+}
+
+.pizza .이미지전체 .재료:hover img.토마토 {
+    left: 76px;
+    top: 8px;
+}
+
+/* .pizza .이미지전체 .재료 img.양파 {
+    left: -200px;
+    top: 250px; 
+} 
+
+     .pizza .이미지전체 .재료 img.허브 {
+    left: -200px;
+    top: 250px;
+} 
+
+    .pizza .이미지전체 .재료 img.후추 {
+    left: -200px;
+    top: 250px;
+}
+
+.pizza .이미지전체 .재료 img.마늘 {
+    left: -200px;
+    top: 250px;
+}
+
+.pizza .이미지전체 .재료 img.고추 {
+    left: -200px;
+    top: 250px;
+}
+
+.pizza .이미지전체 .재료 img.피망 {
+    left: -200px;
+    top: 250px;
+}
+
+.pizza .이미지전체 .재료 img.치즈 {
+    left: -200px;
+    top: 250px;
+}
+
+.pizza .이미지전체 .재료 img.밀가루 {
+    left: -200px;
+    top: 250px;
+} */
+
+/* .pizza .이미지전체 .재료 img.토마토 {
+    left: -200px;
+    top: 250px;
+} */

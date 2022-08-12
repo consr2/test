@@ -1,0 +1,90 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+
+.배너 .your-class{
+    
+}
+.배너 .your-class .slick-track{
+    height: 425px;
+}
+
+
+.배너 .your-class .yc1{
+    background-image: url(image/Kings_1920774.jpg);
+    background-size: cover;
+}
+.배너 .your-class .yc2{
+    background-image: url(image/Mat_1920774.jpg);
+    background-size: cover;
+}
+.배너 .your-class .yc3{
+    background-image: url(image/West_1920774.jpg);
+    background-size: cover;
+}
+
+.배너 .your-class .slick-arrow{
+    position: absolute;
+    z-index: 50; 
+    top: 50%;  transform: translateY(-50%);
+    font-size: 0; border: none;
+    width: 30px; height: 30px;
+    background: none;
+    color: white;
+    transition: 0.3s;
+    
+}
+
+.배너 .your-class .slick-prev{
+    left: 5%;
+}
+
+.배너 .your-class .slick-prev::before{
+    content: "\f0d9";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    font-size: 30px;
+}
+.배너 .your-class .slick-prev:hover:before{
+    display: block;
+    color: aqua;
+    transform: scale(1.5);
+}
+
+.배너 .your-class .slick-next{
+    right: 5%;
+}
+
+.배너 .your-class .slick-next::before{
+    content: "\f0da"; 
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    font-size: 30px;
+}
+.배너 .your-class .slick-next:hover:before{
+    display: block;
+    color: aqua;
+    transform: scale(1.5);
+}
+.배너 .your-class .slick-dots{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+.배너 .your-class .slick-dots li{
+    float: left;
+    margin: 5px;
+    width: 15px; height: 15px;
+    list-style: none;
+    background-color: #bdbdbd;
+    border-radius: 50%;
+}
+.배너 .your-class .slick-dots li button{
+    font-size: 0;
+    background-color: none;
+    border: none;
+}
+.배너 .your-class .slick-dots li.slick-active{
+    background-color: aqua;
+}
+

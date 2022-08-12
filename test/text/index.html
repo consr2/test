@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /*코드 적는 곳*/
+    * {margin:0; padding:0;} /* '*'는 전체를 의미함*/
+    .mian{ /*클레스 불러오기 .*/
+        background-color: rgb(0, 0, 0); /*바탕색*/
+        background-image: url(); /*파일명 넣기, 사이트 연결되어있어야함*/
+        background-size:  50%; /*이미지 크기 설정('cover', 'contain',30px,50% 등 가능*/
+        background-position: center; /*포인트 조정*/
+        transition: 0.5s; /*전환 효과 시간부여 사이즈를 %로 설정해야 적용됨*/
+
+        float: left; /*좌로 정열*/
+        margin: 10px;/*여백만들기, auto시 좌우 동일여백*/
+        padding: 10px;/*범위늘리기*/
+        width: 100px;/*가로범위*/
+        text-align:center; /*글자 중앙정렬*/
+        letter-spacing: 60px; /*자간*/
+        position: fixed;/*고정시키기*/
+    }
+    .약을든남자::after{   /*빈공간 채우기*/
+            content:"";
+            clear: both;
+            display: block;
+    }
+    .main>div{    /*>는 자식 클레스에게 적용 '스페이스'는 모든 하위 클레스 적용*/
+        
+    }
+
+
+    </style>
+
+
+</head>
+<body>
+    <!-- 클레스 만드는 곳-->
+    <div class="main 약을든남자">잠자기
+        <div class="sub">잠을 자는 곰탱이</div>  <!--자식클레스-->
+    </div>          <!--클레스 선언-->
+    
+</body>
+</html>

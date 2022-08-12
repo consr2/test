@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sss{
+            position: absolute;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="sss"></div>
+</body>
+</html>
+
+
+.영어이름   div 파일 자동 생성
+#영어이름     id 파일 자동 생성
+
+크게 "블럭요소" "인라인 요소" 로 나뉘어 진다
+
+
+
+위치 설정법 
+0. 기본적으로 'width', 'height'를 설정해줘야 공간이 생긴다.
+1. position으로 'relative', 'absolute'를 설정한다.
+2. 설정에 따라 기준이 되는 부모요소가 정해지고 그 요소를 기준으로 
+    left, right, top, bottom을 설정할 수 있다.
+3. 그 이후 요소 자체의 위치를 조정하기 위해서 'transition'을 사용하여
+    위치를 조정하기
+4. 기본적인 위치를 잡았으면 'margin', 'padding' 으로 여백 및
+    내부 공간을 만들 수 있다.
+5. 부모의 영역을 인식하기 위해서 마지막에 after을 넣어줘야 다음 부모가 이전 부모의 높이를 인식함
+6. 이전 부모가 float이 있고 자식이 float이면 after를 따로 설정 하지 않아도 부모가 높이를 인식함
+7. 인라인요소는 영역을 인식하지 못해서 display:block 으로 변환해야 된다

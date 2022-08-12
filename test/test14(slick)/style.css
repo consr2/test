@@ -1,0 +1,9 @@
+@charset "UTF_8";
+
+*{margin: 0; padding: 0;}
+
+.main{
+    background-color: antiquewhite;
+    background-image: url(img3.jpg);
+    width: 300px; height: 300px;
+}

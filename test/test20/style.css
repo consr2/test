@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+
+/*--------------------google font---------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;500;600;700&display=swap');
+
+*{margin: 0; padding: 0;
+    font-family: 'Edu VIC WA NT Beginner', cursive;}
+
+a{color: white; text-decoration: none;}
+
+ul, li{list-style: none;}
+
+#wrap{
+    background: url(../nike/bg-main.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+header{
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+header .header_menu ul{display: flex;}
+header .header_menu ul li{ margin-right: 40px;}
+header .header_icon{
+    font-size: 21px;
+    color: white;
+}
+.slick{
+    padding-top: 10%;
+    box-sizing: border-box;
+}
+.slick .slick-slide{
+    position: relative;
+}
+.slick .left{
+    height: 70vh;
+}
+.slick .left img{
+    position: absolute;
+    width: 1000px;
+    left: 50px; top: 0;
+}
+.slick .left h2{
+    position: absolute;
+    left:60px; top: 0;
+    color: white;
+    font-size: 230px;
+    letter-spacing: 10px;
+    line-height: 300px;s
+}
+
+/*----------------------------right------------------------*/
+.slick .right{
+    position: absolute;
+    right: 7%; top: 130px;
+    height: 400px;
+    width: 400px;
+    background: #ccc 1;
+    color: #fff
+}
+.slick .right .nike_star .star{display: inline;}
+.slick .right .nike_star {display: inline-block;}
+.slick .right .nike_star .star i{transform: translatex(200px); transition: 1.7s 1s;opacity: 0;}
+.slick .right .nike_star em{
+    display:inline-block;
+    font-size: 80px;
+    font-weight: 700;
+    transform: translatex(200px);
+    transition: 1.2s 0.8s;
+    opacity: 0;
+}
+.slick .right .retro{
+    transform: translatex(200px);
+    transition: 1.7s 1.5s;
+    opacity: 0;}
+
+
+.slick .slick-active .right .nike_star em{ transform: translatex(0);opacity: 1;}
+.slick .slick-active .right .nike_star i{ transform: translatex(0);opacity: 1;}
+.slick .slick-active .right .retro{transform: translatex(0);opacity: 1;}
+.slick .slick-active .right .desc ul{transform: translatex(0);opacity: 1;}
+.slick .slick-active .right .btn{transform: translatex(0);opacity: 1;}
+
+.slick .right .nike_star i{font-size: 18px; color: yellow; margin-left: 10px;}
+.slick .right .nike_star p:last-child{}
+.slick .right .retro{font-size: 30px; line-height: 35px;}
+.slick .right .desc{padding-top: 10px;}
+.slick .right .desc ul{
+    transform: translatex(200px);
+    transition: 1.7s 1.8s;
+    opacity: 0;}
+.slick .right .desc ul li{}
+.slick .right .desc ul li:nth-child(2){padding-top: 20px;}
+.slick .right .btn{
+    padding-top: 20px;
+    transform: translatex(200px);
+    transition: 1.7s 2.1s;
+    opacity: 0;
+}
+.slick .right .btn ul{display: flex;}
+.slick .right .btn ul li{margin-right: 10px;}
+
+.slick .right .btn select{background: yellow; padding: 2px 5px; border: none; outline: none;}
+.slick .right .btn ul li:nth-child(2){
+    border: 1px solid #fff;
+    display: block;
+    padding: 5px 15px;
+    margin-top: -7px;
+}
+/*-----------------left--------------------*/
+
+.slick .left h2{
+    transform: translatex(-200px);
+    transition: 1.7s 0.5s;
+    opacity: 0;}
+.slick .left img{
+    transform: translatex(200px);
+    transition: 1.7s 0.5s;
+    opacity: 0;}
+
+
+.slick .slick-active .left h2{transform: translatex(0);opacity: 1;}
+.slick .slick-active .left img{transform: translatex(0);opacity: 1;}
+
+/*-----------------button--------------------*/
+.slick .slick-arrow{
+    position: absolute;
+    border: none;
+    height: 40px; width: 40px;
+    background: none;
+    z-index: 11;
+    font-size: 0;
+}
+.slick .slick-prev{
+    top:60%; right:0;
+}
+.slick .slick-prev::after{
+    content: "\f105";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    font-size: 30px;
+    transition: 0.3s;
+}
+.slick .slick-prev:hover::after{
+    color: rgb(255, 255, 255);
+}
+.slick .slick-next{
+    top:60%; left:0;
+}
+.slick .slick-next::after{
+    content: "\f104";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    font-size: 30px;
+    transition: 0.3s;
+}
+.slick .slick-next:hover::after{
+    color: #fff;
+}
